@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="display" id="display" disabled />
+      <div class="buttons">
+        <button class="brown" onclick="clearDisplay()">C</button>
+        <button class="brown" onclick="appendOperator('%')">%</button>
+        <button class="brown" onclick="appendMinus()">(-)</button>
+        <button class="orange" onclick="appendOperator('/')">&divide;</button>
+        <button class="gray" onclick="appendNumber(7)">7</button>
+        <button class="gray" onclick="appendNumber(8)">8</button>
+        <button class="gray" onclick="appendNumber(9)">9</button>
+        <button class="orange" onclick="appendOperator('*')">&times;</button>
+        <button class="gray" onclick="appendNumber(4)">4</button>
+        <button class="gray" onclick="appendNumber(5)">5</button>
+        <button class="gray" onclick="appendNumber(6)">6</button>
+        <button class="orange" onclick="appendOperator('-')">-</button>
+        <button class="gray" onclick="appendNumber(1)">1</button>
+        <button class="gray" onclick="appendNumber(2)">2</button>
+        <button class="gray" onclick="appendNumber(3)">3</button>
+        <button class="orange" onclick="appendOperator('+')">+</button>
+        <button class="gray double" onclick="appendNumber(0)">0</button>
+        <button class="gray" onclick="appendDot()">.</button>
+        <button class="orange" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
